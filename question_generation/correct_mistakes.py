@@ -115,7 +115,7 @@ def correct_errors(q_str):
     return grammar_corrected_question
 
 
-with open(r'J:\vqa\ARCLEVR\question_generation\ar_qs.json', encoding='utf-8') as f:
+with open(r'J:\vqa\AR-CLEVR\question_generation\ar_qs.json', encoding='utf-8') as f:
     dic = json.load(f)
     questions = dic['questions']
     for idx, q in enumerate(questions):
@@ -126,7 +126,7 @@ with open(r'J:\vqa\ARCLEVR\question_generation\ar_qs.json', encoding='utf-8') as
         questions[idx] = q
     dic['questions'] = questions
 
-with open(r'J:\vqa\ARCLEVR\question_generation\qr_qs_cor.json', 'w', encoding='utf-8') as f:
+with open(r'J:\vqa\AR-CLEVR\question_generation\qr_qs_cor.json', 'w', encoding='utf-8') as f:
     json.dump(dic, f, ensure_ascii=False)
 
 
