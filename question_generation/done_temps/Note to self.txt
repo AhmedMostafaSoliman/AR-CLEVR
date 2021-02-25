@@ -1,0 +1,2 @@
+I think there is a bug in generating comparison_integer.json questions (or comaprison.json)
+Check first progress mail to doctors .....it is asking if there x in front of something. The thing should have been single instead of plural

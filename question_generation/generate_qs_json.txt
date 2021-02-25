@@ -1,0 +1,2 @@
+cd J:\vqa\ARCLEVR\question_generation;
+python generate_questions.py --input_scene_file J:\vqa\ARCLEVR\CLEVR_v1.0\scenes\CLEVR_val_scenes.json --output_questions_file J:\vqa\ARCLEVR\question_generation\ar_qs.json --scene_start_idx 1 --num_scenes 1

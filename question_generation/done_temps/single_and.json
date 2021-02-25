@@ -1,0 +1,772 @@
+[
+  {
+    "text": [
+      "كم عدد ال<S3>ات ال<M3> ال<C3> ال<Z3> التى <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>؟",
+	  "ما هو عدد ال<S3>ات ال<M3> ال<C3> ال<Z3> التى <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>؟"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>"
+        ],
+        "inputs": [
+          3
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R2>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "relate"
+      },
+      {
+        "inputs": [
+          2,
+          5
+        ],
+        "type": "intersect"
+      },
+      {
+        "side_inputs": [
+          "<Z3>",
+          "<C3>",
+          "<M3>",
+          "<S3>"
+        ],
+        "inputs": [
+          6
+        ],
+        "type": "filter_count"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      }
+    ],
+    "constraints": []
+  },
+  {
+    "text": [
+      "ما هو حجم ال<S3>ة ال<M3> ال<C3> ال<Z3> التى <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>؟",
+	  "ما حجم ال<S3>ة ال<M3> ال<C3> ال<Z3> التى <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>؟",
+	  "توجد <S3>ة <M3> <C3> <Z3> <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>; ما حجمها؟",
+	  "توجد <S3>ة <M3> <C3> <Z3> <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>; ما هو حجمها؟"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>"
+        ],
+        "inputs": [
+          3
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R2>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "relate"
+      },
+      {
+        "inputs": [
+          2,
+          5
+        ],
+        "type": "intersect"
+      },
+      {
+        "side_inputs": [
+          "<Z3>",
+          "<C3>",
+          "<M3>",
+          "<S3>"
+        ],
+        "inputs": [
+          6
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          7
+        ],
+        "type": "query_size"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          2,
+          5
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<Z3>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "ما هو لون ال<S3>ة ال<M3> ال<C3> ال<Z3> التى <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>؟",
+	  "ما لون ال<S3>ة ال<M3> ال<C3> ال<Z3> التى <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>؟",
+	  "توجد <S3>ة <M3> <C3> <Z3> <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>; ما لونها؟",
+	  "توجد <S3>ة <M3> <C3> <Z3> <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>; ما هو لونها؟"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>"
+        ],
+        "inputs": [
+          3
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R2>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "relate"
+      },
+      {
+        "inputs": [
+          2,
+          5
+        ],
+        "type": "intersect"
+      },
+      {
+        "side_inputs": [
+          "<Z3>",
+          "<C3>",
+          "<M3>",
+          "<S3>"
+        ],
+        "inputs": [
+          6
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          7
+        ],
+        "type": "query_color"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<C3>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          2,
+          5
+        ],
+        "type": "OUT_NEQ"
+      }
+    ]
+  },
+  {
+    "text": [
+      "ما هى مادة ال<S3>ة ال<M3> ال<C3> ال<Z3> التى <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>؟",
+	  "ما مادة ال<S3>ة ال<M3> ال<C3> ال<Z3> التى <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>؟",
+	  "مما صنعت ال<S3>ة ال<M3> ال<C3> ال<Z3> التى <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>؟",
+	  "هناك <S3>ة ال<M3> ال<C3> ال<Z3> التى <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>; من أى مادة صنعت؟",
+	  "هناك <S3>ة ال<M3> ال<C3> ال<Z3> التى <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>; ما هى مادتها؟",
+	  "هناك <S3>ة ال<M3> ال<C3> ال<Z3> التى <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>; ما هى المادة المصنوعة منها؟"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>"
+        ],
+        "inputs": [
+          3
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R2>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "relate"
+      },
+      {
+        "inputs": [
+          2,
+          5
+        ],
+        "type": "intersect"
+      },
+      {
+        "side_inputs": [
+          "<Z3>",
+          "<C3>",
+          "<M3>",
+          "<S3>"
+        ],
+        "inputs": [
+          6
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          7
+        ],
+        "type": "query_material"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          2,
+          5
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<M3>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "ما هو شكل ال<S3>ة ال<M3> ال<C3> ال<Z3> التى <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>؟",
+	  "ما شكل ال<S3>ة ال<M3> ال<C3> ال<Z3> التى <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>؟",
+	  "توجد <S3>ة <M3> <C3> <Z3> <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>; ما شكلها؟",
+	  "توجد <S3>ة <M3> <C3> <Z3> <R2> ال<S2>ة ال<M2> ال<C2> ال<Z2> و <R> ال<S>ة ال<M> ال<C> ال<Z>; ما هو شكلها؟"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>"
+        ],
+        "inputs": [
+          3
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R2>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "relate"
+      },
+      {
+        "inputs": [
+          2,
+          5
+        ],
+        "type": "intersect"
+      },
+      {
+        "side_inputs": [
+          "<Z3>",
+          "<C3>",
+          "<M3>",
+          "<S3>"
+        ],
+        "inputs": [
+          6
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          7
+        ],
+        "type": "query_shape"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          2,
+          5
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<S3>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  }
+]
